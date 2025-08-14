@@ -53,7 +53,7 @@ body{
   margin-right:4px;
 }
 
-/* Чипы категорий как на скрине — белая обводка, прозрачный фон */
+/* Чипы категорий — белая обводка, прозрачный фон */
 .chips{display:flex; gap:10px; flex-wrap:wrap}
 .chip{
   background:transparent;
@@ -85,7 +85,7 @@ body{
 .container{max-width:1100px; margin:0 auto; padding:0 14px 24px}
 .status{color:#666; margin:10px 0}
 
-/* Сетка карточек: 3 колонки как на скрине */
+/* Сетка карточек: 3 колонки  */
 .grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -106,7 +106,7 @@ body{
   gap:12px;
 }
 .card__img{
-  height:200px;                   /* покрупнее изображение */
+  height:200px;                   /* изображение */
   display:flex; align-items:center; justify-content:center;
   background:#fafafa;
   border-radius:6px;
@@ -115,13 +115,13 @@ body{
 .card__title{
   font-size:14px;
   line-height:1.3;
-  min-height:2.8em;               /* две строки, как в примере */
+  min-height:2.8em;               /* две строки */
   color:#333;
 }
 .card__meta{display:flex; align-items:center; justify-content:space-between}
 .price{color:#2ecc71; font-weight:700} /* зелёная цена */
 
-/* Кнопка "Add to cart" — оранжевая как на скриншоте */
+/* Кнопка "Add to cart" — оранжевая  */
 .btn{
   align-self:flex-end;
   background:#ff7f66;
