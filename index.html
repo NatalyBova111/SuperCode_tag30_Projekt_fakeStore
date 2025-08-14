@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperFakeStore</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Логотип/заголовок -->
+    <h1 class="logo">SuperFakeStore</h1>
+
+    <!-- Оранжевая панель с поиском/сортировкой и чипами категорий -->
+<div class="toolbar">
+  <div class="toolbar-row">
+    <input id="search" class="search" type="search" placeholder="Search by title" />
+    <select id="sort" class="sort">
+      <option value="relevance">Sort by</option>
+      <option value="price-asc">Price ↑</option>
+      <option value="price-desc">Price ↓</option>
+      <option value="title-asc">Title A–Z</option>
+    </select>
+  </div>
+
+  <div class="toolbar-row cats">
+    <span class="cats-label">Filter by Categories:</span>
+    <div id="catChips" class="chips"></div>
+  </div>
+
+  <!-- скрытый селект оставляем для логики фильтрации -->
+  <select id="category" class="visually-hidden"></select>
+</div>
+
+    <main class="container">
+      <div id="status" class="status">Loading…</div>
+      <section id="grid" class="grid"></section>
+    </main>
+
+    <!-- корзину можешь оставить как есть из предыдущей версии -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
